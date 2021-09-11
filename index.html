@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bap er bank</title>
+    <link rel="stylesheet" href="min.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-auto item-center mx-8">
+    <header>
+      <h2 class="text-4xl text-center">
+        Welcome to my
+        <span class="text-purple-700 text-opacity-100 font-bold">
+          Bap Er Bank!!!!</span
+        >
+      </h2>
+    </header>
+    <main>
+      <div
+        class="
+          h-64
+          grid grid-rows-1 grid-flow-col
+          gap-4
+          text-center
+          items-center
+          font-extrabold
+          text-white text-3xl
+        "
+      >
+        <div class="bg-green-500 rounded-3xl p-8 m-4">
+          <h4>Deposit</h4>
+          $ <span id="deposit">000</span>
+        </div>
+        <div class="bg-purple-600 bg-opacity-50 rounded-3xl p-8 m-4">
+          <h4>withdraw</h4>
+          $ <span id="withdraw">000</span>
+        </div>
+        <div class="bg-gradient-to-r from-red-500 rounded-3xl p-8 m-4">
+          <h4>Balance</h4>
+          $ <span id="balance">1250</span>
+        </div>
+      </div>
+      <!-- input part -->
+      <div
+        class="
+          h-64
+          grid grid-rows-1 grid-flow-col
+          gap-4
+          text-center
+          items-center
+          text-green text-4xl
+        "
+      >
+        <div class="bg-green-500 rounded-3xl p-8 m-4">
+          <h4>Please Deposit</h4>
+          <input id="deposit-input" type="text" class="p-4 rounded-3xl m-4" />
+          <button
+            id="btn-deposit"
+            type="button"
+            class="
+              bg-gradient-to-r
+              from-green-400
+              to-blue-500
+              rounded-2xl
+              p-4
+              m-4
+              hover:from-pink-500 hover:to-yellow-500
+            "
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="bg-purple-600 bg-opacity-50 rounded-3xl p-8 m-4">
+          <h4>please withdraw</h4>
+          <input
+            id="withdraw-input"
+            type="text"
+            class="p-4 rounded-3xl m-4 border-0"
+          />
+          <button
+            id="btn-withdraw"
+            type="button"
+            class="
+              bg-gradient-to-r
+              from-green-400
+              to-blue-500
+              rounded-2xl
+              p-4
+              m-4
+              hover:from-pink-500 hover:to-yellow-500
+            "
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
